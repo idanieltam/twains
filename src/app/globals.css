@@ -29,53 +29,13 @@
 
 @keyframes twin-split {
   0% { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
-  50% { clip-path: polygon(0 0, 49% 0, 49% 100%, 0 100%); }
+  45% { clip-path: polygon(0 0, 49% 0, 49% 100%, 0 100%); }
+  55% { clip-path: polygon(0 0, 49% 0, 49% 100%, 0 100%); }
   100% { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
 }
 
-.animate-gradient-x {
-  animation: gradient-x 15s ease infinite;
-  background-size: 200% 200%;
-}
-
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}
-
-.animate-hologram {
-  animation: hologram-flicker 5s linear infinite;
-  position: relative;
-}
-
-.animate-hologram::before {
-  content: '';
-  position: absolute;
-  inset: -2px;
-  background: linear-gradient(90deg, #00f3ff, #0066ff, #00f3ff);
-  opacity: 0.3;
-  filter: blur(4px);
-  z-index: -1;
-}
-
-.animate-scan {
-  position: relative;
-  overflow: hidden;
-}
-
-.animate-scan::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 5px;
-  background: linear-gradient(to right, transparent, rgba(0, 247, 255, 0.5), transparent);
-  animation: scan-line 4s linear infinite;
-  z-index: 1;
-}
-
 .animate-twin {
-  animation: twin-split 2s ease-in-out infinite;
+  animation: twin-split 3s ease-in-out infinite;
   position: relative;
 }
 

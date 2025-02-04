@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Logo from "../components/Logo";
 
 export default function Home() {
   return (
@@ -8,7 +8,7 @@ export default function Home() {
       {/* Header */}
       <header className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <h1 className="text-2xl font-bold relative"><span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 animate-gradient-x">Twain</span></h1>
+          <Logo />
           <nav>
             <ul className="flex space-x-6">
               <li><a href="#" className="hover:text-blue-400">Home</a></li>
